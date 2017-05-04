@@ -1,0 +1,63 @@
+
+<!--pages/page/xingzhuo.wxml-->
+<scroll-view>
+  <view class='css_content'>
+    <text class='css_xingzhuo' bindtap="select_xingzuo">{{xingzhuo}}▾</text>
+    <text class='css_xingzhuojieding'>{{date}}</text>
+    <view class="css_xuanxiang">
+    <text  class="css_jintian" bindtap="jintian" style="color:{{color}} ">今天</text>
+    <text class="css_benzhou" bindtap="benzhou" style="color:{{color1}}">本周</text>
+    <text class="css_benyue" bindtap="benyue" style="color:{{color2}}">本月</text>
+     <view class="css_line"></view>
+    </view>
+    <text class='css_xingzhuozongjie'>☛ {{data.shorts}}☚</text>
+    <view class="css_yunshixing">
+      <view class="css_xingyun">
+        <image src="../../img/zhengti.png" class="css_tubiao"></image>
+        <text class="css_text">整体运</text>
+        <text class="css_xing">{{zhengti}}</text>
+      </view>
+      <view class="css_xingyun">
+        <image src="../../img/aixin.png" class="css_tubiao"></image>
+        <text class="css_text">爱情运</text>
+        <text class="css_xing">{{aiqing}}</text>
+      </view>
+      <view class="css_xingyun">
+        <image src="../../img/shiye.png" class="css_tubiao"></image>
+        <text class="css_text">事业运</text>
+        <text class="css_xing">{{shiye}}</text>
+      </view>
+      <view class="css_xingyun">
+        <image src="../../img/money.png" class="css_tubiao"></image>
+        <text class="css_text">财富运</text>
+        <text class="css_xing">{{caifu}}</text>
+      </view>
+    </view>
+    <view class="css_line">
+    </view>
+    <view class="css_g">
+    <text >{{mingcheng}}:{{data.lucklyColor}}</text>
+     <text class="css_guiren"> {{mingcheng1}}:{{data.direction}}</text>
+    </view>
+    <view class="css_g">
+    <text >{{mingcheng2}}:{{data.friends}}</text>
+    <text class="css_guiren">{{mingcheng3}}:{{data.numbers}}</text>
+    </view>
+    <view class="css_max_line"></view>
+    <text class="css_juti">整体运势</text>
+    <view class="css_line"></view>
+    <text class="css_juticontent">{{data.contentAll}}</text>
+
+    <text class="css_juti">事业运势</text>
+    <view class="css_line"></view>
+    <text class="css_juticontent">{{data.contentCareer}}</text>
+
+    <text class="css_juti">爱情运势</text>
+    <view class="css_line"></view>
+    <text class="css_juticontent">{{data.contentLove}}</text>
+
+    <text class="css_juti">财富运势</text>
+    <view class="css_line"></view>
+    <text class="css_juticontent">{{data.contentFortune}}</text>
+  </view>
+</scroll-view>

@@ -1,0 +1,145 @@
+/**index.wxss**/
+
+.css_dates {
+  width: 100%;
+  text-align: center;
+  margin-top: -80px;
+}
+
+.css_weather {
+  font-size: 16px;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.css_week {
+  width: 100%;
+  height: 45px;
+}
+
+.css_rili {
+  height: 360px;
+  width: 100%;
+}
+
+.css_xingzuo {
+  background-color: #ebebeb;
+  width: 100%;
+  height: 100px;
+  padding-top: 4px;
+}
+
+.css_title {
+  margin-left: 14px;
+  font-size: 14px;
+}
+
+.css_content {
+  background-color: white;
+  width: 83%;
+  margin-left: 55px;
+  display: flex;
+  margin-top: 6px;
+  border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+
+}
+
+.css_img {
+  margin: 12px;
+  width: 32px;
+  height: 32px;
+}
+
+.css_yunshi {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.css_xingshu {
+  color: gold;
+  font-size: 13px;
+  margin-top: 6px;
+
+}
+
+.css_xing {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.css_holiday_content {
+  margin-top: 6px;
+  display: flex;
+  height: 80px;
+  margin-bottom: 6px;
+}
+
+.css_holiday {
+  background-color: #ebebeb;
+  padding-top: 6px;
+
+}
+
+.css_holiday_date {
+  margin-top: 24px;
+  height: 100px;
+  width: 15%;
+  font-size: 12px;
+  text-align: center;
+}
+
+.css_holiday_detail {
+  background-color: white;
+  padding: 10px;
+  width: 75%;
+  font-size: 14px;
+  line-height: 25px;
+
+}
+
+.css_line {
+  height: 1px;
+  width: 15%;
+  background-color: coral;
+  margin-top: 6px;
+}
+
+.css_h {
+  width: 8px;
+  background-color: coral;
+  height: 80px;
+  border-radius: 12px;
+}
+.css_dd{
+  background-color: red;
+margin-left: 20px;
+margin-right: 20px;
+height: 36px;
+margin-top: 8px;
+display: flex;
+flex-direction: row;
+align-items: center;
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+
+
+}
+.css_t{
+  color: white;
+  text-align: center;
+  flex: 1
+}
+.css_i{
+  margin-left: 14px;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+.css_x{
+width: 8px;
+  background-color: coral;
+  border-radius: 12px;
+
+}

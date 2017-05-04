@@ -1,0 +1,29 @@
+/* pages/page/select_xingzhuo.wxss */
+
+.css_container {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  text-align: center;
+}
+
+.css_content {
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.css_img {
+  width: 64px;
+  height: 64px;
+}
+
+.css_text {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.css_date {
+  font-size: 12px;
+}

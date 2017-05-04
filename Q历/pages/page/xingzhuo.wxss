@@ -1,0 +1,109 @@
+/* pages/page/xingzhuo.wxss */
+
+.css_content {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.css_xingzhuo {
+  width: 100%;
+}
+
+.css_xingzhuojieding {
+  width: 100%;
+  color: darkgrey;
+  font-size: 14px;
+}
+
+.css_xingzhuozongjie {
+  width: 100%;
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+.css_yunshixing {
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  padding-left: 12px;
+    text-align: center;
+}
+
+.css_xingyun {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+.css_tubiao{
+width: 32px;
+height: 32px;
+margin: 6px;
+
+}
+.css_text{
+    font-size: 12px;
+    text-align: center;
+    width: 44px;
+}
+.css_xing{
+    margin-top: 4px;
+     font-size: 8px;
+       text-align: center;
+    width: 44px;
+    color:gold;
+}
+.css_line{
+height: 0.5px;
+margin-left: 12px;
+margin-right: 12px;
+margin-top: 6px;
+margin-bottom: 6px;
+width: 95%;
+background-color: #EBEBEB ;
+}
+.css_g{
+display: flex;
+flex-direction: row;
+margin-left: 25px;
+margin-top: 12px;
+}
+.css_guiren{
+text-align: left;
+margin-left: 30px;
+}
+.css_max_line{
+height: 10px;
+width: 100%;
+background-color:#EBEBEB ;
+margin-top: 20px;
+
+}
+.css_juti{
+text-align: left;
+margin-left: 20px;
+    font-size: 12px;
+    margin-top: 12px;
+}
+.css_juticontent{
+    margin-left: 20px;
+    margin-right: 20px;
+text-align: left;
+line-height: 1.5
+
+}
+.css_jintian{
+ margin-right: 30px;
+}
+.css_benzhou{
+ margin-right: 30px;
+}
+.css_benyue{
+}
+.css_xuanxiang{
+  margin-top: 12px;
+
+
+}

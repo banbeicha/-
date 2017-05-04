@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/page/xingzhuo",
+    "pages/page/select_xingzhuo"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Q历",
+    "navigationBarTextStyle":"black"
+  }
+  
+}
