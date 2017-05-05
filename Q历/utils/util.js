@@ -56,7 +56,7 @@ function getHoliday(that, year, month, day) {
   wx.getStorage({
     key: 'year',
     success: function (res) {
-       console.log("获得日期成功")
+      console.log("获得日期成功")
       if ((new Date().getFullYear()) > res.data) {
         wx.clearStorage({
           key: 'jie',
@@ -110,7 +110,7 @@ function getHoliday(that, year, month, day) {
   wx.getStorage({
     key: 'jie',
     success: function (res) {
-          console.log("获得放假缓存成功")
+      console.log("获得放假缓存成功")
       chuli(that, res.data, year, month, day)
     },
     fail: function (res) {
@@ -168,12 +168,11 @@ function chuli(that, data, year, month, day) {
       holiday_list[j] = { id: j, date: GetDateDiff(year + "-" + month + "-" + day, i), content: data[i].name + ":    " + c }
       j++
     }
-
-
-
   }
+
   that.setData({
-    holiday_list: holiday_list
+    holiday_list: holiday_list,
+    jiari: holiday_list.length == 0 ? true : false
 
   })
 

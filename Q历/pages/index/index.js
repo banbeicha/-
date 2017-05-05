@@ -15,6 +15,7 @@ Page({
     xingshu: '',
     shuju: "",
     img: "",
+    jiari: false,
     month: new Date().getMonth() + 1,
     year: new Date().getFullYear(),
     day: new Date().getDate(),
@@ -283,8 +284,8 @@ Page({
       actions: ctx.getActions()
     })
   },
+  //下个月
   next: function () {
-
     this.canvasCalendar(i, new Date().getDate());
     this.hid();
     if (this.data.month > 12) {
@@ -299,8 +300,8 @@ Page({
       i = 1;
     }
   },
+  //上个月
   pre: function () {
-
     this.canvasCalendar(j, new Date().getDate());
     this.hid();
     if (this.data.month < 1) {
@@ -332,9 +333,11 @@ Page({
     if (this.data.year == new Date().getFullYear() && this.data.month == (new Date().getMonth() + 1)) {
       this.setData(
         {
-          h: true
+          h: true,
+          day: new Date().getDate()
         }
       )
+      this.canvasCalendar(0, 0);
     }
     else {
       this.setData(

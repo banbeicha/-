@@ -4,15 +4,15 @@
   <view class="css_dates">
     <text class="css_weather">{{weatherData}}</text>
     <view class="css_dd">
-    <image src="../../img/left.png" class="css_i" bindtap="pre"></image>
-    <text class="css_t">{{year}}.{{month}}</text>
-       <image src="../../img/day.png" class="css_i" bindtap="day" hidden="{{h}}"></image>
-    <image src="../../img/right.png" class="css_i" bindtap="next"></image>
+      <image src="../../img/left.png" class="css_i" bindtap="pre"></image>
+      <text class="css_t">{{year}}.{{month}}</text>
+      <image src="../../img/day.png" class="css_i" bindtap="day" hidden="{{h}}"></image>
+      <image src="../../img/right.png" class="css_i" bindtap="next"></image>
     </view>
     <canvas class="css_week" canvas-id="weeks" />
     <canvas class="css_rili" canvas-id="myCanvas" />
   </view>
-  <view class="css_holiday">
+  <view class="css_holiday" hidden="{{jiari}}">
     <text class="css_title">节假日</text>
     <view class="css_line"></view>
     <view class="css_holiday_content" wx:for="{{holiday_list}}" wx:key="id">
@@ -25,7 +25,6 @@
   <view class="css_xingzuo">
     <text class="css_title">星座</text>
     <view class="css_content" bindtap="details">
-     <view class="css_x"></view>
       <image src="{{img}}" class="css_img"></image>
       <view class='css_xing'>
         <text class="css_yunshi">{{yunshi}} </text>

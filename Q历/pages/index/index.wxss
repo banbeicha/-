@@ -40,9 +40,6 @@
   margin-left: 55px;
   display: flex;
   margin-top: 6px;
-  border-bottom-left-radius: 12px;
-    border-top-left-radius: 12px;
-
 }
 
 .css_img {
@@ -122,7 +119,7 @@ display: flex;
 flex-direction: row;
 align-items: center;
 border-top-left-radius: 12px;
-border-top-right-radius: 12px;
+border-bottom-right-radius: 12px;
 
 
 }
@@ -136,10 +133,4 @@ border-top-right-radius: 12px;
   width: 24px;
   height: 24px;
   margin-right: 14px;
-}
-.css_x{
-width: 8px;
-  background-color: coral;
-  border-radius: 12px;
-
 }
