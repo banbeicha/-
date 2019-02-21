@@ -1,8 +1,8 @@
 <!--pages/page/select_xingzhuo.wxml-->
 <view class="css_container">
-<view wx:for="{{data}}" class="css_content" wx:key="id">
-<image src="{{item.img_data}}"class="css_img"  bindtap="selects" data-id="{{item.id}}"></image>
-<text class="css_text">{{item.text_data}}</text>
-<text class="css_date">{{item.date_data}}</text>
-</view>
+  <view wx:for="{{data}}" class="css_content" wx:key="id">
+    <image src="{{item.img_data}}" class="css_img" bindtap="selects" data-id="{{item.id}}"></image>
+    <text class="css_text">{{item.text_data}}</text>
+    <text class="css_date">{{item.date_data}}</text>
+  </view>
 </view>

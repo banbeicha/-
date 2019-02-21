@@ -52,99 +52,7 @@ function getyunshi(data, a) {
 }
 
 function getHoliday(that, year, month, day) {
-
-  wx.getStorage({
-    key: 'year',
-    success: function (res) {
-      console.log("获得日期成功")
-      if ((new Date().getFullYear()) > res.data) {
-        wx.clearStorage({
-          key: 'jie',
-          success: function (res) {
-            console.log("清理缓存成功")
-            wx.setStorage({
-              key: 'year',
-              data: new Date().getFullYear(),
-              success: function (res) {
-                console.log("缓存新日期成功")
-              },
-              fail: function (res) {
-                console.log("缓存新日期失败")
-
-              },
-              complete: function (res) {
-                // complete
-              }
-            })
-            // success
-          },
-          fail: function (res) {
-            console.log("清理缓存失败")
-          },
-          complete: function (res) {
-            // complete
-          }
-        })
-      }
-
-    },
-    fail: function (res) {
-      wx.setStorage({
-        key: 'year',
-        data: year,
-        success: function (res) {
-          console.log("缓存日期成功")
-        },
-        fail: function (res) {
-          console.log("缓存日期失败")
-        },
-        complete: function (res) {
-          // complete
-        }
-      })
-    },
-    complete: function (res) {
-      // complete
-    }
-  })
-  wx.getStorage({
-    key: 'jie',
-    success: function (res) {
-      console.log("获得放假缓存成功")
-      chuli(that, res.data, year, month, day)
-    },
-    fail: function (res) {
-      wx.request({
-        url: 'https://api.jisuapi.com/calendar/holiday?appkey=c8a9b267dee09c53',
-        data: {},
-        method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-        success: function (res) {
-          chuli(that, res.data, year, month, day)
-          wx.setStorage({
-            key: 'jie',
-            data: res.data,
-            success: function (res) {
-            },
-            fail: function (res) {
-              // fail
-            },
-            complete: function (res) {
-              // complete
-            }
-          })
-        },
-        fail: function (res) {
-          console.log("数据请求失败" + res.data)
-        },
-        complete: function (res) {
-          // complete
-        }
-      })
-    },
-    complete: function (res) {
-      // complete
-    }
-  })
+  chuli(that, that.data.holiday,year,month,day)
 
 }
 function chuli(that, data, year, month, day) {
@@ -169,7 +77,6 @@ function chuli(that, data, year, month, day) {
       j++
     }
   }
-
   that.setData({
     holiday_list: holiday_list,
     jiari: holiday_list.length == 0 ? true : false

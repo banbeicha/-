@@ -1,14 +1,13 @@
-
 <!--pages/page/xingzhuo.wxml-->
 <scroll-view>
   <view class='css_content'>
     <text class='css_xingzhuo' bindtap="select_xingzuo">{{xingzhuo}}▾</text>
     <text class='css_xingzhuojieding'>{{date}}</text>
     <view class="css_xuanxiang">
-    <text  class="css_jintian" bindtap="jintian" style="color:{{color}} ">今天</text>
-    <text class="css_benzhou" bindtap="benzhou" style="color:{{color1}}">本周</text>
-    <text class="css_benyue" bindtap="benyue" style="color:{{color2}}">本月</text>
-     <view class="css_line"></view>
+      <text class="css_jintian" bindtap="jintian" style="color:{{color}} ">今天</text>
+      <text class="css_benzhou" bindtap="benzhou" style="color:{{color1}}">本周</text>
+      <text class="css_benyue" bindtap="benyue" style="color:{{color2}}">本月</text>
+      <view class="css_line"></view>
     </view>
     <text class='css_xingzhuozongjie'>☛ {{data.shorts}}☚</text>
     <view class="css_yunshixing">
@@ -35,14 +34,16 @@
     </view>
     <view class="css_line">
     </view>
+
     <view class="css_g">
-    <text >{{mingcheng}}:{{data.lucklyColor}}</text>
-     <text class="css_guiren"> {{mingcheng1}}:{{data.direction}}</text>
+      <text class="css_guiren">{{mingcheng}}:{{data.lucklyColor}}</text>
+      <text class="css_guiren1"> {{mingcheng1}}:{{data.direction}}</text>
     </view>
     <view class="css_g">
-    <text >{{mingcheng2}}:{{data.friends}}</text>
-    <text class="css_guiren">{{mingcheng3}}:{{data.numbers}}</text>
+      <text class="css_guiren">{{mingcheng2}}:{{data.friends}}</text>
+      <text class="css_guiren1">{{mingcheng3}}:{{data.numbers}}</text>
     </view>
+
     <view class="css_max_line"></view>
     <text class="css_juti">整体运势</text>
     <view class="css_line"></view>

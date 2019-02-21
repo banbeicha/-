@@ -1,10 +1,5 @@
 {
 
- "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "星座运势",
-    "navigationBarTextStyle":"black"
-  }
+ 
 
 }

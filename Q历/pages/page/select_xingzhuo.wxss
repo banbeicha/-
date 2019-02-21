@@ -6,9 +6,12 @@
   flex-wrap: wrap;
   display: flex;
   text-align: center;
+  justify-content:center;
+  margin-top: 16px;
+
 }
 
-.css_content {
+.css_content {  
   margin: 24px;
   display: flex;
   flex-direction: column;

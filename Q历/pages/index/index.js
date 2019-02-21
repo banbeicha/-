@@ -1,3 +1,4 @@
+//17625405551@163.com
 //引入计算农历方法
 var Lunar = require('../../utils/lunar.js');
 // 引用百度地图微信小程序JSAPI模块 
@@ -21,7 +22,7 @@ Page({
     day: new Date().getDate(),
     img_data: ["../../img/baiyang.png", "../../img/jinniu.png", "../../img/shuangzi.png", "../../img/juxie.png", "../../img/shizizuo.png", "../../img/chunvzuo.png", "../../img/tiancheng.png", "../../img/tianxie.png", "../../img/sheshou.png", "../../img/moxie.png", "../../img/shuiping.png", "../../img/shuangyu.png"],
     holiday_list: '',
-    holiday: { "status": "0", "msg": "ok", "result": { "2017-01-01": { "name": "元旦", "content": "1月1日放假，1月2日（星期一）补休。" }, "2017-01-27": { "name": "春节", "content": "1月27日至2月2日放假调休，共7天。1月22日（星期日）、2月4日（星期六）上班。" }, "2017-04-02": { "name": "清明节", "content": "4月2日至4日放假调休，共3天。4月1日（星期六）上班。" }, "2017-05-01": { "name": "劳动节", "content": "5月1日放假，与周末连休。" }, "2017-05-28": { "name": "端午节", "content": "5月28日至30日放假调休，共3天。5月27日（星期六）上班。" }, "2017-10-01": { "name": "中秋节 国庆节", "content": "10月1日至8日放假调休，共8天。9月30日（星期六）上班。" } } }
+    holiday: { "status": "0", "msg": "ok", "result": { "2019-01-01": { "name": "元旦", "content": "2018年12月30日至2019年1月1日放假" }, "2019-02-05": { "name": "春节", "content": "2月4日至2月10日放假调休，共7天。2月2日（星期六）、2月3日（星期日）上班。" }, "2019-04-05": { "name": "清明节", "content": "4月5日至7日放假，共3天。" }, "2019-05-01": { "name": "劳动节", "content": "5月1日放假" }, "2019-06-07": { "name": "端午节", "content": "6月7日至9日放假，共3天。" }, "2019-9-13": { "name": "中秋节", "content": "9月13日至15日放假，共3天。9月30日（星期六）。" } ,"2019-10-01": { "name": "国庆节", "content": "10月1日至7日放假调休，共7天。10月12日（星期六）上班。" }} }
   },
   onLoad: function () {
     var that = this;
@@ -39,6 +40,7 @@ Page({
       that.setData({
         weatherData: weatherData,
       });
+      console.log(that.data.weatherData)
     }
     // 发起weather请求 
     BMap.weather({
