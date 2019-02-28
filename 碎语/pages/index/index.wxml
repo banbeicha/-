@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper class='content' bindchange='pageChange'	>
+    <block wx:for="{{contentData}}" wx:key="{{index}}" wx:if='{{contentData.length>0&&item.image.url!=null}}'>
+      <swiper-item class="content_item">
+        <image src="{{item.image.url}}" class='content_img' mode='aspectFill' lazy-load='true'></image>
+        <view class='content_date_parent'>
+          <canvas canvas-id='TCanvas{{item.published_at}}'></canvas>
+          <text class='content_date'>{{item.daily_date}}</text>
+        </view>
+        <text class='content_text' selectable='true'>{{item.content}}</text>
+        <text class='content_author'>{{item.subheading}}</text>
+      </swiper-item>
+
+    </block>
+  </swiper>
+
+</view>
